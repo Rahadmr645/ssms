@@ -1,5 +1,6 @@
 import express from 'express' 
 import dotenv from 'dotenv' 
+import cors from 'cors'
 dotenv.config();
 import connectToMongo from './config/db.js'
 const app = express();
@@ -10,7 +11,7 @@ const PORT = process.env.PORT;
 
 
 app.use(express.json());
-
+app.use(cors());
 
 // router section 
 app.use('/api/user', userRoutes);

@@ -13,7 +13,7 @@ const LoginForm = () => {
         password: ''
     });
 
-    const URL = "http://localhost:4000"
+    const URL = "https://sm.up.railway.app"
     const handleChange = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };

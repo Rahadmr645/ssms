@@ -7,7 +7,7 @@ import User from '../model/userModel.js';
 dotenv.config();
 const router = express.Router();
 
-
+// create routes
 router.post('/create', async (req, res) => {
   try {
     const SECRET_KEY = process.env.SECRET_KEY;
@@ -33,6 +33,7 @@ router.post('/create', async (req, res) => {
   }
 });
 
+// login routes
 router.post('/login', async (req, res) => {
   try {
     const SECRET_KEY = process.env.SECRET_KEY;
